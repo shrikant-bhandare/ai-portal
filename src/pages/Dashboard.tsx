@@ -3,6 +3,7 @@ import { StatCard } from '../components/dashboard/StatCard';
 import { RevenueChart } from '../components/dashboard/RevenueChart';
 import { RecentActivity } from '../components/dashboard/RecentActivity';
 import { ServiceHighlights } from '../components/dashboard/ServiceHighlights';
+import { NotionProjectList } from '../components/notion/NotionProjectList';
 import { GradientText } from '../components/ui/GradientText';
 
 export function Dashboard() {
@@ -52,6 +53,10 @@ export function Dashboard() {
           <h3 className="text-lg font-semibold text-white mb-4">Recent Activity</h3>
           <RecentActivity />
         </div>
+      </div>
+
+      <div className="bg-[#1A2737] rounded-lg border border-gray-800 p-6 mb-6">
+        <NotionProjectList />
       </div>
 
       <div className="bg-[#1A2737] rounded-lg border border-gray-800 p-6">

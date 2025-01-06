@@ -17,6 +17,8 @@ import { Conversions } from '../pages/Conversions';
 import { Conversations } from '../pages/Conversations';
 import { Customers } from '../pages/Customers';
 import { Reporting } from '../pages/Reporting';
+import { Ads } from '../pages/Ads';
+import { NotionProjects } from '../pages/NotionProjects';
 
 export function AppRoutes() {
   return (
@@ -31,6 +33,7 @@ export function AppRoutes() {
             <AuthenticatedLayout>
               <Routes>
                 <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/notion-projects" element={<NotionProjects />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/services/:serviceId" element={<ServiceDetails />} />
                 <Route path="/files" element={<MyFiles />} />
@@ -42,6 +45,7 @@ export function AppRoutes() {
                 <Route path="/conversations" element={<Conversations />} />
                 <Route path="/customers" element={<Customers />} />
                 <Route path="/reporting" element={<Reporting />} />
+                <Route path="/ads" element={<Ads />} />
                 <Route path="/" element={<Navigate to="/dashboard" replace />} />
               </Routes>
             </AuthenticatedLayout>
