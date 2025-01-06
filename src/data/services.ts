@@ -1,4 +1,4 @@
-import { Monitor, MessageSquare, Palette, Mail, Brain } from 'lucide-react';
+import { Monitor, MessageSquare, Palette, Mail, Brain, RefreshCw, FileText } from 'lucide-react';
 
 export const services = [
   {
@@ -20,7 +20,31 @@ export const services = [
     title: 'Branding and Design Services',
     description: 'Creative branding and design solutions to make your business stand out.',
     icon: Palette,
-    gradient: 'text-purple-400'
+    gradient: 'text-purple-400',
+    subServices: [
+      {
+        id: 'logo-design',
+        title: 'Logo Design',
+        description: 'Professional logo and brand identity design'
+      },
+      {
+        id: 'rebranding',
+        title: 'Rebranding',
+        description: 'Complete brand refresh and repositioning',
+        icon: RefreshCw
+      },
+      {
+        id: 'brand-development',
+        title: 'Brand Development',
+        description: 'Comprehensive brand strategy and identity development',
+        icon: FileText
+      },
+      {
+        id: 'brand-guidelines',
+        title: 'Brand Guidelines',
+        description: 'Comprehensive brand style guides'
+      }
+    ]
   },
   {
     id: 'email-marketing',
